@@ -1,4 +1,11 @@
+/***************************************************************************
+resumeBuilder.js
+Alex Mathai
+Front-End Developer NanoDegree
+Javascript Basics Final Project - Resume
 
+Below are 4 JSON Objects: bio, education, work, and projects
+****************************************************************************/
 var bio = {
 	"name" : "Alex Mathai",
 	"role" : "Tech StartUp Founder | Strategy Consultant | Innovator",
@@ -16,6 +23,49 @@ var bio = {
 	
 
 }
+
+bio.display = function () {
+	    if(bio.skills.length > 0){
+	      var formattedPic = HTMLbioPic.replace("%data%",bio.biopic);
+	      $("#header").append(formattedPic);
+
+	      var formattedHeader = HTMLheaderName.replace("%data%", bio.name);
+	      $("#header").append(formattedHeader);
+
+	      var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+	      $("#header").append(formattedRole);
+
+	      var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+	      $("#header").append(formattedMobile);
+
+	      var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	      $("#header").append(formattedEmail);
+
+	      var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+	      $("#header").append(formattedGitHub);
+
+	      var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	      $("#header").append(formattedLocation);
+
+
+	      $("#header").append(HTMLskillsStart);
+
+	      var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);      
+	      $("#skills").append(formattedSkill);
+	      
+	      formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);      
+	      $("#skills").append(formattedSkill);
+	      formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);      
+	      $("#skills").append(formattedSkill);
+	      formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);      
+	      $("#skills").append(formattedSkill);
+	      formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);      
+	      $("#skills").append(formattedSkill);         
+	    
+	    }
+	}
+
+bio.display();
 
 
 var education = {

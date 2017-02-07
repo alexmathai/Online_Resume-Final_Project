@@ -120,7 +120,7 @@ function initializeMap() {
       $("#mapDiv").append(map);
     };
 
-    mapDisplay();
+  mapDisplay();
 
   /*
   locationFinder() returns an array of every location string from the JSONs
@@ -145,7 +145,7 @@ function initializeMap() {
     for (var job in work.jobs) {
       locations.push(work.jobs[job].location);
     }
-
+    //console.log('locations: ' +  locations);
     return locations;
   }
   
@@ -157,10 +157,15 @@ function initializeMap() {
   function createMapMarker(placeData) {
 
     // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.k;  // latitude from the place service
-    var lon = placeData.geometry.location.D;  // longitude from the place service
+    var lat = placeData.geometry.location.lat();  // latitude from the place service    
+    var lon = placeData.geometry.location.lng();  // longitude from the place service
     var name = placeData.formatted_address;   // name of the place from the place service
     var bounds = window.mapBounds;            // current boundaries of the map window
+
+    //console.log('name: ' +  name);
+    //console.log('lat: ' +  lat);
+    //console.log('long: ' +  lon);
+    //console.log('placeData: ' +  placeData.geometry.location);
 
     // marker is an object with additional data about the pin for a single location
     var marker = new google.maps.Marker({
@@ -229,11 +234,12 @@ function initializeMap() {
   window.mapBounds = new google.maps.LatLngBounds();
 
   // locations is an array of location strings returned from locationFinder()
-  //locations = locationFinder();
-
+  locations = [];
+  locations = locationFinder();
+  //console.log('locations 2: ' +  locations);
   // pinPoster(locations) creates pins on the map for each location in
   // the locations array
-  //pinPoster(locations);
+  pinPoster(locations);
 
 };
 
