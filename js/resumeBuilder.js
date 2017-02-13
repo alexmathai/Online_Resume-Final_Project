@@ -10,11 +10,11 @@ var bio = {
 	"name" : "Alex Mathai",
 	"role" : "Tech StartUp Founder | Strategy Consultant | Innovator",
 	"contacts": {
-		"mobile": "305-984-6935",
-		"email": "alexmathai1@gmail.com",
+		"mobile": "312-588-2300",
+		"email": "alex@imagenius.com",
 		"github": "https://github.com/alexmathai",
 		"twitter":"",
-		"location": "Ft. Lauderdale, Florida"
+		"location": "Gotham, USA"
 	},
 	"welcomeMsg" : "Greetings idiots.",	
 	"skills" : ["Product Development","Go-to-Market Strategy",   
@@ -76,16 +76,16 @@ var education = {
 			"location": "Chicago, IL",
 			"degree": "MBA",
 			"majors" : ["Strategy", "Marketing", "Entrepreneurship"],			
-			"dates": 2009,
+			"dates": 2012,
 			"url": "http://www.uchicago.edu"
 		},
 		{
-			"name":"Illinois Institute of Technology",
+			"name":"California Institute of Technology",
 			"location": "Chicago, IL",
 			"degree": "BS",
 			"majors" : ["Computer Engineering"],
-			"dates": 1998,
-			"url": "http://www.iit.edu"
+			"dates": 2005,
+			"url": "http://www.caltech.edu"
 			
 		},
 	],
@@ -139,32 +139,32 @@ education.display();
 var work = {
 	"jobs": [
 		{
-			"employer":"BeerDropper",
-			"title":"Product Manager",
-			"location":"Chicago,IL",
-			"dates":"2015-present",
-			"description":"Alcohol delivery start-up using patented technology to safely deliver alcohol in under-served markets."
-		},
-		{
-			"employer":"Sprowt Messenger",
-			"title":"Founding Team/Chief Strategist",
+			"employer":"Justice League",
+			"title":"BatMan",
 			"location":"Chicago, IL",
-			"dates":"2014-present",
-			"description":"Mobile messaging app bringing organization and productivity to chat."
-		},
-		{
-			"employer":"Lanio Innovation Consulting",
-			"title":"Sr. Project Manager",
-			"location":"Grand Rapids, MI",
 			"dates":"2015-present",
-			"description":"Working as the right hand of the Founder, established processes to create a sustainable business practice including: strategic planning, client management, team management, new hire selection, onboarding, and mentoring."
+			"description":"Keep the world safe."
 		},
 		{
-			"employer":"EXL Service, Inc.",
-			"title":"Associate",
-			"location":"New York, NY",
+			"employer":"Avengers",
+			"title":"Iron Man",
+			"location":"New York, New York",
+			"dates":"2014-present",
+			"description":"Prevent Ragnarok."
+		},
+		{
+			"employer":"The Old Republic",
+			"title":"Jedi Master",
+			"location":"Los Angeles, CA",
+			"dates":"2015-present",
+			"description":"Defeat the Sith"
+		},
+		{
+			"employer":"House Stark",
+			"title":"Lord of Winterfell, Warden of the North",
+			"location":"Minneapolis, Minnesota",
 			"dates":"2012-2013",
-			"description":"As part of the Operations Consulting group, worked on financial modeling and process improvement projects for large cap companies in the insurance and financial services industries."
+			"description":"Stop the White Walkers."
 		},
 		{
 			"employer":"Freelance Business Consultant",
@@ -172,22 +172,7 @@ var work = {
 			"location":"Chicago, IL",
 			"dates":"2006-2012, 2014-2015",
 			"description":"Clients ranging from startups to small caps in insurance, renewable energy, logistics, healthcare, technology, retail, non-profits. Focused on growth strategy, go/no go decisions, and go-to-market strategy."
-		},
-		{
-			"employer":"RxDocuments, LLC.",
-			"title":"Product Development Manager",
-			"location":"Miami, FL",
-			"dates":"2003-2005",
-			"description":""
-		},
-		{
-			"employer":"Tellabs, Inc.",
-			"title":"Software Engineer",
-			"location":"Bolingbrook, IL",
-			"dates":"1999-2002",
-			"description":""
-		},
-
+		},		
 	]
 }
 
